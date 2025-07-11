@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sauce Lab Regression suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Sauce Lab Test Case(failed)">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="userName2" value="locked_out_user"/>
+    <parameter name="password2" value="secret_sauce"/>
+    <parameter name="userName" value="error_user"/>
+    <classes>
+      <class name="DataProviderSauceLab.tests.SauceLabLoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validateLoginFunctionality2"/>
+        </methods>
+      </class> <!-- DataProviderSauceLab.tests.SauceLabLoginTest -->
+    </classes>
+  </test> <!-- Sauce Lab Test Case(failed) -->
+</suite> <!-- Failed suite [Sauce Lab Regression suite] -->

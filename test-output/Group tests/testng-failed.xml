@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Group tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Grouping(failed)">
+    <parameter name="companyPhoto" value="/Users/erbol/Desktop/companyphoto.jpg"/>
+    <parameter name="companyEmail" value="towing@gmail.com"/>
+    <parameter name="companyName" value="Towing LLC"/>
+    <parameter name="companyAddress" value="whatever"/>
+    <parameter name="companyCreatedName" value="Towing LLC"/>
+    <parameter name="companyPhoneNumber" value="999 999 9999"/>
+    <classes>
+      <class name="supplysyncframework.tests.CreateCompanyTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="createCompanyTest"/>
+        </methods>
+      </class> <!-- supplysyncframework.tests.CreateCompanyTest -->
+    </classes>
+  </test> <!-- Grouping(failed) -->
+</suite> <!-- Failed suite [Group tests] -->

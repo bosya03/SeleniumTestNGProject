@@ -61,6 +61,7 @@ public class CarsRealPractice {
         String actualPrice = selectNoMaxPrice.getFirstSelectedOption().getText();
         String expectedPrice = "No max price";
         System.out.println("actualPrice = " + actualPrice);
+        System.out.println("Here is the actual price to see changes for git hub purposes => " + actualPrice);
 
 
 
