@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parameter Practice Suite">
+    <test name="Logic Test">
+        <parameter name="firstName" value="Erbol"></parameter>
+        <parameter name="brand" value="Rolex"></parameter>
+        <parameter name="color" value="Silver"></parameter>
+        <parameter name="zipcode" value="15106"></parameter>
+
+
+        
+        <classes>
+            
+            <class name="testngconcept.ParametersLogic"></class>
+            
+            
+        </classes>
+
+    </test>
+
+</suite>

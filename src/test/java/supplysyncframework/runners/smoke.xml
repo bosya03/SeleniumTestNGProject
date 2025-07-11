@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <test name="Login Success">
+        <groups>
+            <run>
+                <include name="loginSuccess"/>
+                <include name="loginFail"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="supplysyncframework.tests.SupplySyncLoginTest"/>
+        </classes>
+    </test>
+</suite>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Grouping Practice ">
+    <test name="Group tests">
+
+        <groups>
+            <run>
+<!--                <include name="smoke"></include>-->
+<!--                <include name="regression"></include>-->
+<!--                <include name="checkout"></include>-->
+                <include name="login"></include>
+            </run>
+        </groups>
+        <classes>
+            <class name="testngconcept.grouping.CheckoutTests"></class>
+            <class name="testngconcept.grouping.LoginTests"></class>
+            <class name="testngconcept.grouping.SearchTests"></class>
+        </classes>
+    </test>
+</suite>

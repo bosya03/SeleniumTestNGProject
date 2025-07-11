@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Bank Regression suite">
+    
+    <test name="Bank Test Case">
+        <parameter name="title" value="XYZ Bank"></parameter>
+
+        <parameter name="addFirstName" value="Bola"></parameter>
+        <parameter name="addLastName" value="Bak"></parameter>
+
+        <parameter name="addPostCode" value="60000"></parameter>
+        <parameter name="alertMessage1" value="Customer added successfully"></parameter>
+
+        <parameter name="openName" value="Harry Potter"></parameter>
+        <parameter name="openCurrency" value="Dollar"></parameter>
+
+        <parameter name="alertMessage2" value="Account created successfully"></parameter>
+        <parameter name="nameToSearch" value="Harry"></parameter>
+
+        <classes>
+            
+            <class name="mybankproject.qa.bank.tests.LoginPageTest"></class>
+            <class name="mybankproject.qa.bank.tests.ManagerPageTest"></class>
+            <class name="mybankproject.qa.bank.tests.CustomerPageTest"></class>
+            
+        </classes>
+
+        
+    </test>
+    
+</suite>

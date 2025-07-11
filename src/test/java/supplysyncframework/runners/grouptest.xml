@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Group tests">
+    <test name="Grouping">
+        <parameter name="companyPhoto" value="/Users/erbol/Desktop/companyphoto.jpg"/>
+        <parameter name="companyName" value="Towing LLC"/>
+        <parameter name="companyEmail" value="towing@gmail.com"/>
+        <parameter name="companyAddress" value="whatever"/>
+        <parameter name="companyPhoneNumber" value="999 999 9999"/>
+        <parameter name="companyCreatedName" value="Towing LLC"/>
+        <classes>
+            <class name="supplysyncframework.tests.CreateCompanyTest"></class>
+        </classes>
+    </test>
+</suite>
